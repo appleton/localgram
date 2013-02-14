@@ -1,0 +1,5 @@
+define({
+  API_ROOT: 'https://api.instagram.com/v1',
+
+  IG_CLIENT_ID: 'replace this string with your instagram client ID (http://instagram.com/developer/clients/manage/)'
+});

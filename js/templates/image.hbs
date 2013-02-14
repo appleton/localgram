@@ -1,0 +1,40 @@
+{{#if images}}
+  <div class="row-fluid">
+    <a href="{{link}}" class="thumbnail span8">
+      <img src="{{images.standard_resolution.url}}" />
+    </a>
+    <div class="caption span4">
+      <div class="media">
+        <img src="{{user.profile_picture}}" width="65" class="pull-left" />
+        <div class="media-body">
+          <h4 class="media-heading">
+            {{user.full_name}}
+          </h4>
+          <ul class="unstyled">
+            <li class="muted">@{{user.username}}</li>
+            <li>Likes <span class="badge badge-info">{{likes.count}}</span></li>
+          </ul>
+        </div>
+      </div>
+      {{#if comments.data}}
+        <h3>Comments</h3>
+        <ul class="unstyled comments">
+          {{#each comments.data}}
+            <li class="media">
+              <img src="{{from.profile_picture}}" width="45" class="pull-left" />
+              <div class="media-body">
+                <h4 class="media-heading">
+                  {{from.full_name}}
+                  <small>@{{from.username}}</small>
+                </h4>
+                <p>{{text}}</p>
+              </div>
+            </li>
+          {{/each}}
+        </ul>
+      {{/if}}
+    </div>
+  </div>
+{{else}}
+  <div class="alert alert-info">Loading image&hellip;</div>
+{{/if}}

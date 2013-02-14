@@ -1,0 +1,28 @@
+{
+  "name": "LocalGram",
+  "author": "Andy Appleton",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.0a",
+    "grunt-cli": "~0.1.6",
+    "grunt-contrib-jasmine": "0.3.0rc5",
+    "grunt-template-jasmine-requirejs": "~0.1.0",
+    "grunt-contrib-jshint": "~0.1.0",
+    "grunt-contrib-connect": "~0.1.0",
+    "jamjs": "~0.2.13"
+  },
+  "jam": {
+    "packageDir": "jam",
+    "baseUrl": "js",
+    "dependencies": {
+      "backbone": "0.9.9",
+      "jquery": "1.9.1",
+      "underscore": "1.4.3",
+      "text": "*",
+      "handlebars": "*"
+    },
+    "config": {
+      "baseUrl": "/js"
+    }
+  }
+}

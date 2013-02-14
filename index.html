@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LocalGram</title>
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/app.css" />
+</head>
+<body>
+<header class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <a class="brand" href="/">LocalGram</a>
+      <span class="navbar-text">Find Instagrams near you</span>
+      <form class="geolocate navbar-form pull-right form-search">
+        <fieldset class="input-append">
+          <input id="distance" name="distance" type="number" min="0" max="5"
+                 placeholder="distance" class="search-query input-small" />
+          <span class="add-on">km</span>
+          <button class="btn btn-success">
+            Find
+            <b class="icon-map-marker icon-white"></b>
+          </button>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</header>
+
+<section id="main" role="main" class="container"></section>
+
+<script src="/jam/require.js" data-main="/js/app"></script>
+</body>
+</html>
