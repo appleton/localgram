@@ -1,6 +1,4 @@
 .DS_Store
-node_modules/*
-jam/*
 _SpecRunner.html
 .grunt/*
 js/constants.js

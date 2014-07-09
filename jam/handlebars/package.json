@@ -1,0 +1,20 @@
+{
+    "name": "handlebars",
+    "description": "Extension of the Mustache logicless template language",
+    "version": "1.3.0",
+    "homepage": "http://www.handlebarsjs.com/",
+    "keywords": [
+    "handlebars",
+    "mustache",
+    "template",
+    "html"
+    ],
+    "categories": ["Templating"],
+    "main": "handlebars.js",
+    "jam": {
+        "main": "handlebars.js",
+        "shim": {
+            "exports": "Handlebars"
+        }
+    }
+}
